@@ -77,10 +77,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center; */
 }
 
 .section {
@@ -88,16 +84,15 @@ body {
   padding-bottom: 94px;
 }
 
-.header-conteiner {
-  display: flex;
-  align-items: center;
-}
-
 /* =================HEADER============== */
 
 .page-header {
   align-items: center;
   border-bottom: 1px solid #ececec;
+}
+
+.header-conteiner {
+  display: flex;
 }
 
 .page-navigation {
@@ -117,7 +112,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-web {
+.logo__element {
   color: var(--accent-color);
 }
 
@@ -128,7 +123,7 @@ body {
   padding-left: 0;
 }
 
-.menu-list .link {
+.menu-list__link {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -141,7 +136,7 @@ body {
   transition: color var(--transition-time-cubic);
 }
 
-.menu-list .link.current {
+.menu-list__link.current {
   color: var(--accent-color);
 }
 
@@ -157,8 +152,8 @@ body {
   background-color: var(--accent-color);
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.menu-list__link:hover,
+.menu-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -205,12 +200,12 @@ body {
   fill: var(--secondary-color);
 }
 
-.contacts-icon-email {
+.contacts-list__icon--email {
   width: 16px;
   height: 12px;
 }
 
-.contacts-icon-tell {
+.contacts-list__icon--tel {
   width: 10px;
   height: 16px;
 }
@@ -254,7 +249,7 @@ body {
   align-items: center;
 }
 
-.baner-text {
+.page-baner__title {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
@@ -293,7 +288,7 @@ body {
 
 /* ===========BENEFITS============= */
 
-.benefits-caption {
+.benefits__title {
   font-style: normal;
   font-weight: var(--primry-font-weight);
   font-size: 36px;
@@ -308,18 +303,18 @@ body {
   column-gap: 30px;
 }
 
-.benefits-list-item {
+.benefits-list__item {
   width: 270px;
 }
 
-.icon-benefits {
+.benefits-list__icon--svg {
   align-items: center;
   justify-content: center;
   width: 70px;
   height: 70px;
 }
 
-.benefits-icon-group {
+.benefits-list__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,7 +325,7 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-.benefits-subtitle {
+.benefits-list__subtitle {
   margin-bottom: 10px;
   font-weight: var(--primry-font-weight);
   font-size: 14px;
@@ -338,7 +333,7 @@ body {
   text-transform: uppercase;
 }
 
-.benefits-text {
+.benefits-list__text {
   color: var(--secondary-color);
   font-weight: var(--secondary-font-weight);
   line-height: 1.7em;
@@ -352,11 +347,7 @@ body {
   padding-top: 0;
 }
 
-.about-img {
-  position: relative;
-}
-
-.about-caption {
+.about-us__title {
   margin-bottom: 50px;
   font-weight: var(--primry-font-weight);
   font-size: 36px;
@@ -370,19 +361,11 @@ body {
   justify-content: center;
 }
 
-/* .about-img-overlay {
-  position: absolut;
-  width: 100%;
-  /* background-color: rgba(47, 48, 58, 0.8); */
-/* background-color: #000000;
-  font-weight: var(--primry-font-weight);
-  font-size: var(--primary-font-size);
-  color: var(--other-color);
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-} */
-.about-img-overlay-text {
+.about-list__item {
+  position: relative;
+}
+
+.img-overlay__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,7 +391,7 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-.our-team-caption {
+.our-team__title {
   margin-bottom: 50px;
   font-weight: var(--primry-font-weight);
   font-size: 36px;
@@ -421,7 +404,7 @@ body {
   display: flex;
 }
 
-.workers-item {
+.workers-list__item {
   background-color: var(--other-color);
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -429,12 +412,12 @@ body {
   border-radius: 4px;
 }
 
-.team-subtitle {
+.workers-details {
   margin-top: 30px;
   margin-bottom: 16px;
 }
 
-.workers-name {
+.workers-details__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -442,7 +425,7 @@ body {
   text-align: center;
 }
 
-.workers-position {
+.workers-details__position {
   color: var(--secondary-color);
   font-weight: var(--secondary-font-weight);
   font-size: 16px;
@@ -450,7 +433,7 @@ body {
   text-align: center;
 }
 
-.team-link-list {
+.links-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,7 +441,7 @@ body {
   column-gap: 10px;
 }
 
-.team-link {
+.links-list__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -469,7 +452,7 @@ body {
   transition: background-color var(--transition-time-cubic);
 }
 
-.icon-link {
+.links-list__icon {
   fill: var(--primary-icon-color);
   width: 20px;
   height: 20px;
@@ -477,13 +460,13 @@ body {
   transition: fill var(--transition-time-cubic);
 }
 
-.team-link:hover,
-.team-link:focus {
+.links-list__link:hover,
+.links-list__link:focus {
   background-color: var(--accent-color);
 }
 
-.team-link:hover .icon-link,
-.team-link:focus .icon-link {
+.links-list__link:hover .links-list__icon,
+.links-list__link:focus .links-list__icon {
   fill: var(--other-color);
 }
 
