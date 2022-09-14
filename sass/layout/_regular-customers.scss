@@ -1,4 +1,4 @@
-.regular-customers .customers-caption {
+.regular-customers__title {
   font-family: var(--main-font-family);
   font-weight: var(--primry-font-weight);
   font-size: 36px;
@@ -15,7 +15,7 @@
   column-gap: 30px;
 }
 
-.customers-link {
+.customers-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
   transition: border-color var(--transition-time-cubic);
 }
 
-.icon-logo {
+.customers-list__icon {
   width: 106px;
   height: 60px;
   fill: var(--primary-icon-color);
@@ -35,12 +35,12 @@
   transition: fill var(--transition-time-cubic);
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.customers-list__link:hover,
+.customers-list__link:focus {
   border-color: var(--accent-color);
 }
 
-.customers-link:hover .icon-logo,
-.customers-link:focus .icon-logo {
+.customers-list__link:hover .customers-list__icon,
+.customers-list__link:focus .customers-list__icon {
   fill: var(--accent-color);
 }

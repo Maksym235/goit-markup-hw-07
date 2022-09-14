@@ -1,13 +1,13 @@
-@import './utils/visually-hidden';
-@import './utils/variables';
+// Utils/_mail.scss
+@import './utils/main';
 
-@import './base/common';
-@import './base/conteiner';
-@import './base/section';
+// Base/_main.scss
+@import './base/main';
 
-@import './components/button';
-@import './components/logo';
+// Components/_main.scss
+@import './components/main';
 
+// Layout/
 @import './layout/header';
 @import './layout/portfolio/services';
 @import './layout/footer';

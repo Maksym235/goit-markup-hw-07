@@ -1,20 +1,11 @@
-@import './utils/visually-hidden';
-@import './utils/variables';
+// Utils/_main.scss
+@import './utils/main';
 
-@import './base/common';
-@import './base/conteiner';
-@import './base/section';
+// base/_main.scss
+@import './base/main';
 
-@import './components/button';
-@import './components/logo';
+// Components/_main.scss
+@import './components/main';
 
-@import './layout/header';
-@import './layout/baner';
-@import './layout/benefits';
-@import './layout/about-us';
-@import './layout/our-team';
-@import './layout/regular-customers';
-@import './layout/footer';
-@import './layout/backdrop';
-@import './layout/modal-window';
-@import './layout/modal-content';
+// Layout/_mail.scss
+@import './layout/main';
