@@ -76,7 +76,7 @@
   background-color: var(--accent-color);
 }
 
-.links-list__link:hover .links-list__icon,
-.links-list__link:focus .links-list__icon {
+.links-list__link:hover .links-list__icon--fill,
+.links-list__link:focus .links-list__icon--fill {
   fill: var(--other-color);
 }
