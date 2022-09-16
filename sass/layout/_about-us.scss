@@ -3,10 +3,8 @@
 }
 
 .about-us__title {
+  @include font-styles($fs: 36px, $lh: 42px);
   margin-bottom: 50px;
-  font-weight: var(--primry-font-weight);
-  font-size: 36px;
-  line-height: 1.16em;
   text-align: center;
 }
 

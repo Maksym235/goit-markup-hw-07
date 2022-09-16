@@ -61,6 +61,11 @@
   align-items: center;
 
   transition: background-color var(--transition-time-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .links-list__icon--fill {
@@ -69,14 +74,9 @@
   height: 20px;
 
   transition: fill var(--transition-time-cubic);
-}
 
-.links-list__link:hover,
-.links-list__link:focus {
-  background-color: var(--accent-color);
-}
-
-.links-list__link:hover .links-list__icon--fill,
-.links-list__link:focus .links-list__icon--fill {
-  fill: var(--other-color);
+  .links-list__link:hover &,
+  .links-list__link:focus & {
+    fill: var(--other-color);
+  }
 }

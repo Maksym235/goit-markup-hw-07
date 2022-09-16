@@ -42,23 +42,30 @@
   line-height: 1.7;
 }
 
-.address-list__link--email,
+.address-list__link--email {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: var(--secondary-font-weight);
+  line-height: 1.7;
+
+  transition: color var(--transition-time-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 .address-list__link--tel {
   color: rgba(255, 255, 255, 0.6);
   font-weight: var(--secondary-font-weight);
   line-height: 1.7;
 
   transition: color var(--transition-time-cubic);
-}
 
-.address-list__link--email:hover,
-.address-list__link--email:focus {
-  color: var(--accent-color);
-}
-
-.address-list__link--tel:hover,
-.address-list__link--tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .social-links {
@@ -95,11 +102,11 @@
   align-items: center;
 
   transition: background-color var(--transition-time-cubic);
-}
 
-.links-list__link:hover,
-.links-list__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .links-list__icon {

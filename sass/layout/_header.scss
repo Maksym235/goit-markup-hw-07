@@ -29,6 +29,11 @@
   letter-spacing: 0.02em;
 
   transition: color var(--transition-time-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu-list__link.current {
@@ -47,11 +52,6 @@
   background-color: var(--accent-color);
 }
 
-.menu-list__link:hover,
-.menu-list__link:focus {
-  color: var(--accent-color);
-}
-
 .contacts-list {
   margin-left: auto;
   display: flex;
@@ -62,11 +62,8 @@
   letter-spacing: 0.02em;
 }
 
-.page-header__email,
-.page-header__tel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.page-header__email {
+  @extend align;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -74,16 +71,27 @@
   font-weight: 500;
 
   transition: color var(--transition-time-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.page-header__email:hover,
-.page-header__email:focus {
-  color: var(--accent-color);
-}
+.page-header__tel {
+  @extend align;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.page-header__tel:hover,
-.page-header__tel:focus {
-  color: var(--accent-color);
+  color: var(--secondary-color);
+  font-weight: 500;
+
+  transition: color var(--transition-time-cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .page-header__email--icon,
@@ -95,19 +103,19 @@
 .page-header__email--icon {
   width: 16px;
   height: 12px;
+
+  .page-header__email:hover &,
+  .page-header__email:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .page-header__tel--icon {
   width: 10px;
   height: 16px;
-}
 
-.page-header__email:hover .page-header__email--icon,
-.page-header__email:focus .page-header__email--icon {
-  fill: var(--accent-color);
-}
-
-.page-header__tel:hover .page-header__tel--icon,
-.page-header__tel:focus .page-header__tel--icon {
-  fill: var(--accent-color);
+  .page-header__tel:hover &,
+  .page-header__tel:focus & {
+    fill: var(--accent-color);
+  }
 }

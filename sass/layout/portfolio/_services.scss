@@ -26,12 +26,12 @@
 .services-list__link {
   display: block;
   transition: box-shadow var(--transition-time-cubic);
-}
 
-.services-list__link:hover,
-.services-list__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .card-desc {
@@ -78,8 +78,8 @@
   background-color: rgba(33, 150, 243, 0.9);
 
   transition: transform var(--transition-time-cubic);
-}
 
-.services-list__link:hover .card-overlay__text {
-  transform: translateY(0%);
+  .services-list__link:hover & {
+    transform: translateY(0%);
+  }
 }

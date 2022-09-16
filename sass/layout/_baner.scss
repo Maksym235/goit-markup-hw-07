@@ -8,8 +8,7 @@
 .overlay {
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  @include push-auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/baner-img.jpg');
@@ -18,9 +17,7 @@
 }
 
 .page-baner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend align;
 }
 
 .page-baner__title {

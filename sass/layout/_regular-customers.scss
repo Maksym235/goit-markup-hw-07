@@ -25,6 +25,11 @@
   border-radius: 4px;
 
   transition: border-color var(--transition-time-cubic);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .customers-list__icon {
@@ -33,14 +38,9 @@
   fill: var(--primary-icon-color);
 
   transition: fill var(--transition-time-cubic);
-}
 
-.customers-list__link:hover,
-.customers-list__link:focus {
-  border-color: var(--accent-color);
-}
-
-.customers-list__link:hover .customers-list__icon,
-.customers-list__link:focus .customers-list__icon {
-  fill: var(--accent-color);
+  .customers-list__link:hover &,
+  .customers-list__link:focus & {
+    fill: var(--accent-color);
+  }
 }
