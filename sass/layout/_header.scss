@@ -63,7 +63,7 @@
 }
 
 .page-header__email {
-  @extend align;
+  @extend %align;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -79,7 +79,7 @@
 }
 
 .page-header__tel {
-  @extend align;
+  @extend %align;
   padding-top: 32px;
   padding-bottom: 32px;
 

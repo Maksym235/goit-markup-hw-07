@@ -17,7 +17,8 @@
 }
 
 .page-baner {
-  @extend align;
+  @extend %align;
+  flex-direction: column;
 }
 
 .page-baner__title {

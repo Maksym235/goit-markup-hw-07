@@ -78,18 +78,18 @@
   border-color: var(--accent-color);
 }
 
-.modal-form__checkbox--label {
+.modal-form-checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-top: 20px;
   font-weight: var(--secondary-font-weight);
   font-size: var(--primary-font-size);
   line-height: 1.71;
   color: var(--secondary-color);
 }
 
-.modal-form__checkbox--icon {
+.modal-form-checkbox-icon {
   width: 16px;
   height: 15px;
   fill: #fff;
@@ -98,15 +98,15 @@
   margin-right: 8px;
 }
 
-.modal-form__checkbox--input {
+.modal-form-checkbox-input {
   appearance: none;
 }
 
-.modal-form__checkbox-input:checked + .modal-form__checkbox--icon {
+.modal-form-checkbox-input:checked + .modal-form-checkbox-icon {
   fill: var(--accent-color);
   border: none;
 }
 
-.checkbox__policy {
+.checkbox-policy {
   color: var(--accent-color);
 }

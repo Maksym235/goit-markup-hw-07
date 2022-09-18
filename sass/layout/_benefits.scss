@@ -1,5 +1,9 @@
 .benefits__title {
-  @include font-styles($fs: 36px $lh: 42, $clr: #ffffff) text-align: center;
+  text-align: center;
+  font-weight: var(--primry-font-weight);
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--other-color);
 }
 
 .benefits-list {
@@ -21,7 +25,7 @@
 }
 
 .benefits-list__icon {
-  @extend align;
+  @extend %align;
   margin-bottom: 30px;
   border-radius: 4px;
   width: 270px;
@@ -30,8 +34,9 @@
 }
 
 .benefits-list__subtitle {
-  @include font-styles($lh: 16px);
-
+  font-weight: var(--primry-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
